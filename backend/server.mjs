@@ -57,9 +57,9 @@ app.use(passport.session());
 app.get('/facebook', passport.authenticate('facebook'));
 app.get('/facebook/callback', passport.authenticate('facebook', {
   // Redirect to the main page upon successful login.
-  successRedirect: 'yourFrontEndURL/home', 
+  successRedirect: 'https://reimagined-broccoli-wr7gr4w6jx5h967w-3000.app.github.dev/home', 
   // Redirect to login page on authentication failure.
-  failureRedirect: 'yourFrontEndURL', 
+  failureRedirect: 'https://reimagined-broccoli-wr7gr4w6jx5h967w-3000.app.github.dev/', 
 }));
 
 // start the Express server
